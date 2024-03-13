@@ -1,0 +1,17 @@
+<div class="container center">
+  <h2 class="text-center">View</h2>
+
+  <div>
+    <strong>ID</strong>
+    <p>{{ post.id }}</p>
+  </div>
+  <div>
+    <strong>First Name</strong>
+    <p>{{ post.first_name }}</p>
+  </div>
+  <div>
+    <strong>Last Name</strong>
+    <p>{{ post.last_name }}</p>
+  </div>
+</div>
+<a routerLink="/post/index" (click)="backbtn()" class="btn btn-warning mb-3 text-white">Back</a>

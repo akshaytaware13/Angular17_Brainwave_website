@@ -1,0 +1,54 @@
+<div class="container center">
+  <h2 class="text-center">Update User</h2>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <input
+        placeholder="Enter FirtName" [(ngModel)]="post.first_name"
+        type="text"
+        id="firstName"
+        formControlName="first_name"
+        class="form-control"
+      />
+      <div
+        *ngIf="f['first_name'].touched && f['first_name'].invalid"
+        class="alert alert-danger"
+      >
+        first_name is required*
+        <div
+          style="color: red"
+          *ngIf="f['first_name'].errors && f['first_name'].errors['reuired']"
+        >
+          first_name is required*
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        placeholder="Enter LastName" [(ngModel)]="post.last_name"
+        type="text"
+        id="last_name"
+        formControlName="last_name"
+        class="form-control"
+      />
+      <div
+        *ngIf="f['last_name'].touched && f['last_name'].invalid"
+        class="alert alert-danger"
+      >
+        last_name is required*
+        <div *ngIf="f['last_name'].errors && f['last_name'].errors['reuired']">
+          last_name is required*
+        </div>
+      </div>
+    </div>
+<a
+    routerLink="/post/index"
+    (click)="backbtn()"
+    class="btn btn-warning mb-3 text-white"
+    >Back</a
+  >
+    <button class="btn btn-primary mt-4" type="submit" [disabled]="!form.valid">
+      Update Data
+    </button>
+  </form>
+</div>

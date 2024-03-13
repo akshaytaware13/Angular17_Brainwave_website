@@ -1,0 +1,32 @@
+h2 {
+  font-weight: bold;
+  margin-top: 90px;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.btn-success {
+  background-color: green;
+  color: white;
+  padding: 8px 10px;
+  display: inline-block;
+}
+tr {
+  text-align: center;
+}
+
+table {
+  margin-top: 10px;
+}
+.text-danger {
+  color: red;
+}
+.text-info {
+  color: gray;
+  margin:0 8px;
+}
+.fa-eye {
+  color: blue;
+}

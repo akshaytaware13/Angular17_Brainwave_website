@@ -1,0 +1,49 @@
+<div class="container">
+  <h2 class="text-center"> Contact Us</h2>
+  <a  routerLink="/post/create/" class="btn btn-success mb-2">Create User</a>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Id</th>
+          <th>Age</th>
+        <th>Gender</th>
+        <th>Mobile Number</th>
+        <th>Pan No.</th>
+        <th>Aadhar No.</th>
+
+        <th width="250px">Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.first_name }}</td>
+        <td>{{ post.last_name }}</td>
+        <td>{{ post.emailId }}</td>
+        <td>{{ post.age }}</td>
+        <td>{{ post.gender }}</td>
+        <td>{{ post.mobilenumber }}</td>
+        <td>{{ post.pan_no }}</td>
+        <td>{{ post.adhaar_no }}</td>
+
+        <td>
+          <a [routerLink]="['/post/', post.id, 'view']"
+            ><i class="fa-1x fa-regular fa-eye me-3"></i
+          ></a>
+          <a [routerLink]="['/post/', post.id, 'edit']"
+            ><i class="fa-1x fa-regular fa-pen-to-square me-3 text-info"></i
+          ></a>
+          <a
+            [routerLink]="['/post/', post.id, 'edit']"
+            (click)="deletePost(post.id)"
+            ><i class="fa-1x fa-solid fa-trash text-danger"></i
+          ></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

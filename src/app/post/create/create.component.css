@@ -1,0 +1,27 @@
+h1 {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+  padding: 70px;
+  background-color: #B0C5A4 ;
+}
+
+
+/* input {
+  width: 50%;
+} */
+a {
+  padding: 4px 10px;
+  background-color: orangered;
+  color: white;
+  margin-top: 40px;
+  border: none;
+}
+
+.form-group:first-child {
+  margin-top: 20px;
+}
+.alert-danger {
+  color: red;
+}

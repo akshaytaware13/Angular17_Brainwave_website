@@ -1,0 +1,39 @@
+.why-choose{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+background-color: rgb(232, 229, 229);
+width: 100%;
+}
+
+.container .icon .fa-user-o{
+  border: 1px solid gray;
+  padding: 10px 12px;
+  background-color: #8f55cd;
+  border-radius: 6px;
+}
+
+.container .icon .fa-paper-plane{
+   border: 1px solid gray;
+  padding: 10px 12px;
+  background-color: rgb(221, 72, 72);
+  border-radius: 6px;
+}
+.container .icon .fa-comments{
+   border: 1px solid gray;
+  padding: 10px 12px;
+  background-color: rgb(98, 200, 85);
+  border-radius: 6px;
+}
+.container .icon .fa-clock-o{
+   border: 1px solid gray;
+  padding: 10px 12px;
+  background-color:gray;
+  border-radius: 6px;
+}
